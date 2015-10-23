@@ -1,0 +1,257 @@
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+html{
+  height:100%; 
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+body{
+  width:100%;
+  height:100%;
+  line-height:1.5;
+  font-family:'Lato', sans-serif;
+  font-weight:300;
+  font-size:16px;
+  background:#007A3D;
+}
+ul{
+  list-style-type: none;
+}
+.demo-wrapper{
+}
+.dashboard{
+}
+
+/* the wrapper column */
+
+.col1{
+  width:99%; 
+  margin:1em auto;	
+  padding-top:20px;
+  padding-left:1%;
+}
+
+/* the square boxes */
+
+.big, .small{ 
+  float:left; 
+  margin:0 auto 1%; 
+  color:white;
+  font-size:48px;
+  text-align:center; 
+  height: 156px;
+  font-weight:300;
+  overflow:hidden;
+  padding:1em 1em;
+  cursor:pointer;
+  transition:all 0.3s ease-out;
+  opacity:0.8;
+}
+
+.big:hover, .small:hover{
+  background:white;
+}
+
+
+
+.big{
+  width: 49%;
+  margin-right: 1%;
+ 
+}
+.small{ 
+  width: 24%;
+  margin-right: 1%;
+}
+.big p {
+  transition:all 0.3s ease-out;
+}
+.small.last{
+  margin-right:0;
+}
+
+/*icon fonts styles*/
+
+.icon-font{
+  font-weight: bold;
+  font-family:'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+  line-height: 72px;
+  font-size:72px;
+}
+.big .icon-font{
+  float:left;
+}
+
+
+a {
+	text-decoration:none;
+}
+
+/*styling the boxes/thumbs*/
+
+.rss-thumb {background:#ED8C01;}
+.rss-thumb:hover {color:#ED8C01;}
+
+.tw-thumb {background:#C0DEED;}
+.tw-thumb:hover {color:#C0DEED;}
+
+.fb-thumb {background:#3B5998; font-size: 48px;}
+.fb-thumb:hover {color:#3B5998;}
+
+.gplus-thumb {background:#EF3A5B;}
+.gplus-thumb:hover {color:#EF3A5B;}
+
+.shock-thumb {background:#04ACAD; cursor: default;}
+.shock-thumb:hover {color:#04ACAD;}
+
+.mark-thumb {background:#85A9C3; cursor: default;}
+.mark-thumb:hover {color:#85A9C3;}
+
+.four-thumb{background:#8BBA30; cursor: default;}
+.four-thumb:hover{color:#8BBA30;}
+
+.back-thumb {background:#EF3A5B; font-family:'BebasNeueRegular','Arial Narrow',Arial,sans-serif;}
+.back-thumb:hover {color:#EF3A5B;}
+
+.home-thumb {background:#385E82;}
+.home-thumb:hover{color:#385E82;}
+
+.opps-thumb {background:#2FB1BE; 
+font-family:'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+padding:1.5%;
+cursor: default;
+}
+.opps-thumb:hover {color:#2FB1BE;}
+
+.opps-thumb p{
+  font-size:32px;
+  line-height:36px;
+
+}
+.opps-thumb-span{
+  display:block;
+}
+.opps-thumb:hover p{
+}
+
+.back-thumb p{
+	font-size:12px;
+}
+
+/* the search form */
+
+.search{ 
+    border: medium none;
+    border-radius: 7px 7px 7px 7px;
+    color: #999999;
+    padding: 6px 7px 3px;
+    width: 220px;
+	background:#FFF;
+	font-family:'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+	font-size:18px;
+	border:1px dashed #ddd;
+	
+}
+
+.search_form {
+	position:relative;
+	width:210px;
+	margin: 0 auto;
+}
+
+.submit{
+    border: medium none;
+    border-radius: 7px 7px 7px 7px;
+    color: #979797;
+    padding: 7px;
+    width: 160px;
+	background:eee;
+}
+
+
+#search_button{
+   background: url("search.png") no-repeat scroll 0 0 white;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 38px;
+}
+
+/*======================= media queries =======================*/
+
+
+
+@media screen and (min-width: 64em){
+   .col1{
+    margin: 0 auto;
+  } 
+  
+}
+
+
+
+@media screen and (max-width: 800px){
+
+.opps-thumb p{
+	line-height:24px;
+	font-size:24px;
+}
+
+}
+
+@media screen and (max-width: 599px){
+
+  .big, .small{
+	padding:0.4em 0.2em;
+	height: 78px;
+	font-size:32px;
+	
+  }
+  
+.opps-thumb p{
+  font-size:18px;
+  line-height:18px;
+}  
+  
+
+.opps-thumb form {
+	display:none;
+}
+
+.icon-font{
+  font-weight: bold;
+  font-family:'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+  line-height:36px;
+  font-size:36px;
+} 
+  
+}
+
+@media screen and (max-width: 320px){
+.col1 {
+    width: 280px;
+}
+
+}
